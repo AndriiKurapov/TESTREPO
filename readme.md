@@ -11,7 +11,7 @@ $ git config --global core.editor nano
 ```
 Let's see if it worked
 
-!(screenshots/Screen2.1)
+![](screenshots/Screen2.1)
 
 # Results of my work
 
