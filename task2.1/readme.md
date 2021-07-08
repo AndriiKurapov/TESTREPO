@@ -14,26 +14,38 @@ Also, VirtualBox has next pros:
 * VirtualBox can adjust video memory
 ## Part 2: WORK WITH VIRTUALBOX
 ### 2.1 Import, export, cloning
-In this part of my task, i learned how to import, export and clone existing VM with OS 
+In this part of my task, i learned how to import, export and clone existing VM with OS
+ 
 ![](Screenshots/Screen1.png)
+
 ![](Screenshots/Screen2.png)
+
 ![](Screenshots/Screen3.png)
+
 ![](Screenshots/Screen4.png)
+
 ![](Screenshots/Screen5.png)
-![](Screenshots/Screen6.png) 
+
+![](Screenshots/Screen6.png)
+ 
 ### 2.2 Snapshots
 Snapshot it's like a photo of a virtual machine (VM) at specific state. The virtual machine can be used for all sorts of experiments, or changes can be made to it, which then need to be quickly rolled back. In order not to suffer every time to restore the previous state of the VM, VirtualBox has a snapshot feature that can return VM to its original or previous state
 Lets create 'test' directory, create test file with some text in it, and make a snapshot
+
 ![](Screenshots/Screen7.png)
 
 Lets delete 'test' directory and create second snapshot
+
 ![](Screenshots/Screen8.png)
 
 We can backup to Snapshot 1 when 'test' folder wasn't deleted.
 ### 2.3 USB Setup
 In this part of task i tried to set up usb ports on guest machine so it can see host usb devices. I tried to make my usb flash drive visible for guest OS
+
 ![](Screenshots/Screen9.png)
+
 ![](Screenshots/Screen10.png)
+
 As we can see, we have new sdb4 device with 7.2GB of memory.
 ### 2.4 Guest Additions installation, shared folders
 At first, we need to install some updates for our VM
@@ -44,7 +56,10 @@ mount /dev/cdrom /media/cdrom
 sudo /media/cdrom/VBoxLinuxAdditions.run
 ```
 Now we can set up our shared folder
+
 ![](Screenshots/Screen11.png)
+
+
 ![](Screenshots/Screen12.png)
 ### 2.5 Networking modes
 VM's network adapters have various networking modes, which i need to examine in this task:
@@ -66,23 +81,36 @@ NAT protocol allows the guest operating system to access the Internet using a pr
 The principle of network address translation is pretty simple. When the guest OS sends packets to a specific address of a remote machine on the network, the NAT service running under VirtualBox intercepts these packets, extracts the segments containing the sending point address (the IP address of the guest operating system) and replaces them with a host machine IP address. Then it repackages them and sends them to the specified address.
 4. Bridged adapter mode
 With bridged networking, Oracle VM VirtualBox uses a device driver on your host system that filters data from your physical network adapter. This driver is therefore called a net filter driver. This enables Oracle VM VirtualBox to intercept data from the physical network and inject data into it, effectively creating a new network interface in software. When a guest is using such a new software interface, it looks to the host system as though the guest were physically connected to the interface using a network cable. The host can send data to the guest through that interface and receive data from it. This means that you can set up routing or bridging between the guest and the rest of your network.
+
 ![Bridged adapter settings](Screenshots/Screen14.png)
+
 5. NAT Network mode
 NAT network is a kind of local subnet, which is common for all virtual machines in its composition.
 Reasoning from the point of view of using a virtual machine as a local server, the main drawback of these connection types is that they are not accessible from the outside. Because of this, some necessary functions do not work: connecting to the server via SSH, any calls to test sites.
 The limitations of NAT modes can be bypassed by forwarding ports for connections or by adding a network adapter with the connection type - Virtual Host Adapter. Both methods provide inbound connections between the host system and the local server.
+
 ![NAT Network settings window](Screenshots/Screen15.png)
+
 ![Port forwarding window with rule for SSH access](Screenshots/Screen16.png)
+
 ![Network modes routing table](Screenshots/Screen17.png)
 ### 2.6 Work with CLI through VBoxManage
 I tried basic VBoxManage commands
+
 ![](Screenshots/Screen18.png)
+
 ![](Screenshots/Screen19.png)
+
 ![](Screenshots/Screen20.png)
+
 ![](Screenshots/Screen21.png)
+
 ![](Screenshots/Screen22.png)
+
 ![](Screenshots/Screen23.png)
+
 ![](Screenshots/Screen24.png)
+
 ![](Screenshots/Screen25.png)
 ## Part 3: WORK WITH VAGRANT
 ### 3.1 Vagrant init and up default vagrantbox (precise64)
@@ -97,7 +125,9 @@ C:\VM\VagramtVM>vagrant up
 ### 3.2 Connecting via PuTTy
 ![](Screenshots/Screen27.png)
 ### 3.3 Create my own vagrantbox
+
 ![](Screenshots/Screen28.png)
+
 ![](Screenshots/Screen29.png)
 # Results of my work
 1. Learned basic tools of OracleVM VirtualBox
