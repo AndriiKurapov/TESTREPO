@@ -90,19 +90,19 @@ To delete my GIT repo i used command `aws s3 rm s3://firstbucket192 --recursive`
 ## 8. Deploying Docker containers on Amazon ECS
 Amazon Elastic Container Service (ECS) is a highly scalable, high performance container management service that supports Docker containers and allows you to easily run applications on a managed cluster of Amazon EC2 instances.
 ### Step 1: Configure cluster settings
-![](Screenshots/Screen32)
+![](Screenshots/Screen32.png)
 
 I choosed docker image with nginx web-server
 ### Step 2: Connect to load balancer via endpoint
-![](Screenshots/Screen33)
+![](Screenshots/Screen33.png)
 ## 9. Create a static website on Amazon S3 with my photo and work results
 ### Step 1: Allow static website hosting
-![](Screenshots/Screen38)
+![](Screenshots/Screen38.png)
 ### Step 2: Allow public access and configure read-only policy
-![](Screenshots/Screen35)
+![](Screenshots/Screen35.png)
 
-![](Screenshots/Screen36)
+![](Screenshots/Screen36.png)
 ### Step 3: Upload index.html and my photo files
-![](Screenshots/Screen37)
+![](Screenshots/Screen37.png)
 
-Here's my website [link][http://firstbucket192.s3-website.eu-central-1.amazonaws.com]
+Here's my website [link](http://firstbucket192.s3-website.eu-central-1.amazonaws.com)
