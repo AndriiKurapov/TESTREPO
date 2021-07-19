@@ -118,15 +118,14 @@ Mysqldump is a dedicated database backup utility. Dump is a file, usually with t
 ![](Screenshots/Screen30.png)
 
 ![](Screenshots/Screen31.png)
-
-![](Screenshots/Screen32.png)
-### 
 ## PART 3
 ### 3.1 Create Amazon DynamoDB table
-![](Screenshots/Screen33.png)
+![](Screenshots/Screen32.png)
 ### 3.2 Enter data into Amazon DB Table
-![](Screenshots/Screen34.png)
+![](Screenshots/Screen33.png)
 ### 3.3 Query an Amazon DynamoDB table using Query and Scan
+![](Screenshots/Screen34.png)
+
 ![](Screenshots/Screen35.png)
 
 ![](Screenshots/Screen36.png)
