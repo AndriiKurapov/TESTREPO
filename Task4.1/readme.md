@@ -1,5 +1,5 @@
-#Task 4.1 Report
-##Networking basics
+# Task 4.1 Report
+## Networking basics
 ### Topology 1
 Create scheme which contains 4 PC-PT type computers and hub. Each computer should be connected to hub via copper straight-through cable
 
@@ -68,8 +68,11 @@ Assigned IP-addresses according to table:
 
 We divided our network on two subnetworks
 Let's assign gateways to PC's, so the can communicate with each other
+
 Gateway for 192.168.0.0 network is 192.168.0.5
-Gateway for 192.168.0.0 network is 192.168.1.5
+
+Gateway for 192.168.1.0 network is 192.168.1.5
+
 Let's add simple PDU to see if it works properly
 
 ![](Screenshots/Screen15.png)
